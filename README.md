@@ -1,35 +1,35 @@
-# Proyecto: Mini EDA y Diseño de Pipelines con Scikit-Learn
+# Project: Mini EDA and Pipeline Design with Scikit-Learn
 
-Este proyecto forma parte de la serie de aprendizaje en **Ciencia de Datos 2**. En este repositorio se demuestra la implementación de un flujo de trabajo completo de preprocesamiento de datos utilizando el dataset clásico **Iris**.
+This project is part of the **Data Science 2** learning series. This repository demonstrates the implementation of a complete data preprocessing workflow using the classic **Iris** dataset.
 
-## Objetivo
-El objetivo principal es consolidar los conceptos de análisis exploratorio (EDA) y la creación de flujos de trabajo automatizados (Pipelines) para preparar datos para modelos de Machine Learning de manera eficiente y reproducible.
+## Objective
+The main goal is to consolidate the concepts of Exploratory Data Analysis (EDA) and the creation of automated workflows (Pipelines) to prepare data for Machine Learning models in an efficient and reproducible manner.
 
-## Contenido del Proyecto
+## Project Contents
 
-1.  **Análisis Exploratorio de Datos (Mini EDA):**
-    *   Identificación y clasificación de tipos de variables (Numéricas Continuas, Categóricas Nominales).
-    *   Visualización de distribuciones y relaciones entre variables mediante `pairplot` y mapas de calor de correlación con `Seaborn`.
-    *   Detección de valores faltantes y análisis estadístico descriptivo.
+1.  **Exploratory Data Analysis (Mini EDA):**
+    *   Identification and classification of variable types (Continuous Numerical, Nominal Categorical).
+    *   Visualization of distributions and relationships between variables using `pairplot` and correlation heatmaps with `Seaborn`.
+    *   Missing value detection and descriptive statistical analysis.
 
-2.  **Ingeniería de Características:**
-    *   Implementación de una función personalizada (`calculate_area`) para obtener el área del pétalo.
-    *   Uso de `FunctionTransformer` para integrar lógica personalizada dentro del pipeline de Scikit-Learn.
+2.  **Feature Engineering:**
+    *   Implementation of a custom function (`calculate_area`) to obtain the petal area.
+    *   Use of `FunctionTransformer` to integrate custom logic within the Scikit-Learn pipeline.
 
-3.  **Diseño de Pipelines de Procesamiento:**
-    *   **Pipeline Numérico:** Imputación de valores faltantes (estrategia de mediana) y estandarización de escalas (`StandardScaler`).
-    *   **Pipeline Categórico:** Codificación de variables nominales mediante `OneHotEncoder`.
-    *   **ColumnTransformer:** Integración de múltiples transformadores en un único objeto para procesar el conjunto de datos de forma paralela y organizada.
+3.  **Processing Pipeline Design:**
+    *   **Numerical Pipeline:** Imputation of missing values (median strategy) and scale standardization (`StandardScaler`).
+    *   **Categorical Pipeline:** Encoding of nominal variables using `OneHotEncoder`.
+    *   **ColumnTransformer:** Integration of multiple transformers into a single object to process the dataset in a parallel and organized way.
 
-## Herramientas Utilizadas
+## Tools Used
 - **Python 3**
-- **Pandas** y **NumPy** (Manipulación de datos)
-- **Matplotlib** y **Seaborn** (Visualización)
-- **Scikit-Learn** (Pipelines, Preprocesamiento y Transformadores)
+- **Pandas** & **NumPy** (Data manipulation)
+- **Matplotlib** & **Seaborn** (Visualization)
+- **Scikit-Learn** (Pipelines, Preprocessing, and Transformers)
 
-## Resultados
-El flujo de trabajo transforma las 5 columnas originales en un conjunto de **8 características optimizadas**, incluyendo variables escaladas, variables binarias (One-Hot) y nuevas métricas calculadas, listas para ser consumidas por cualquier algoritmo de clasificación.
+## Results
+The workflow transforms the original 5 columns into a set of **8 optimized features**, including scaled variables, binary indicators (One-Hot), and newly calculated metrics, ready to be consumed by any classification algorithm.
 
 ---
-**Elaborado por:** Juan Guillermo Marulanda Mesa
-**Fecha:** Marzo 2026
+**Developed by:** Juan Guillermo Marulanda Mesa  
+**Date:** March 2026
